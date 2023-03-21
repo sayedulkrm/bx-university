@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with-device-width, initial-scale=1.0">
+    <title>BIXOU University</title>
+    <link rel="shortcut icon" type="image/png" href="images/fav-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a class="logo-uni" href="index.html"><img src="images/logo-uni.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="cross-line" onclick="hideMenu()"><img src="images/cross.png" alt=""></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <r class="menu-bar" onclick="showMenu()"><img src="images/Menu.png" alt=""></r>
+        </nav>
+        <h1>Contact Us</h1>
+
+
+    </section>
+
+    <!-------------contact us------------->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12094.264712325998!2d-74.0094906!3d40.7275657!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259e1a87b55b5%3A0x216b83e9f8b01a97!2sNew%20York%20University!5e0!3m2!1sen!2sbd!4v1655460966996!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div class="wiiw">
+                    <img src="images/home-small.png" alt="">
+                    <span>
+                        <h5>XYZ Road,ABC Building</h5>
+                        <p>New York,United States</p>
+                    </span>
+                </div>
+                <div class="wiiw">
+                    <img src="images/phone.png">
+                    <span>
+                        <h5>+1 225. 5100.</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div class="wiiw">
+                    <img src="images/gmail.png">
+                    <span>
+                        <h5>info@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+
+
+                </form>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!--    -------FOOTER------>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quas incidunt consequatur quae perferendis quaerat, <br> ea dolorum alias unde asperiores quasi sint nobis cumque minus cupiditate, impedit inventore, porro tempore!</p>
+
+
+        <div class="icons">
+            <img src="images/fb.png">
+            <img src="images/twitter-sign.png">
+            <img src="images/linkedin-sign.png">
+        </div>
+        <!--        [Have to add Icon. Facebook, Insta, Twiter etc]-->
+        <p>Made by Sayedul Karim</p>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!---------------------javascript----------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
